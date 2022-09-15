@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class eatherService {
+    func getWeather(completion: @escaping (Int) -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let temterature = Int.random(in: -30...30)
+            completion(temterature)
+        }
+    }
+}

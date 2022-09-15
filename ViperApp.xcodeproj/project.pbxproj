@@ -13,6 +13,8 @@
 		D9BA2FBC28D3C1C000CEDEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BA2FBA28D3C1C000CEDEF6 /* Main.storyboard */; };
 		D9BA2FBE28D3C1C100CEDEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BA2FBD28D3C1C100CEDEF6 /* Assets.xcassets */; };
 		D9BA2FC128D3C1C100CEDEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BA2FBF28D3C1C100CEDEF6 /* LaunchScreen.storyboard */; };
+		D9BA2FCC28D3C31400CEDEF6 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FCB28D3C31400CEDEF6 /* DateService.swift */; };
+		D9BA2FCE28D3C33200CEDEF6 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FCD28D3C33200CEDEF6 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D9BA2FBD28D3C1C100CEDEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9BA2FC028D3C1C100CEDEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BA2FC228D3C1C100CEDEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9BA2FCB28D3C31400CEDEF6 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		D9BA2FCD28D3C33200CEDEF6 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		D9BA2FB328D3C1C000CEDEF6 /* ViperApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA2FC828D3C24B00CEDEF6 /* App */,
+				D9BA2FCA28D3C2FC00CEDEF6 /* API */,
+				D9BA2FC928D3C26600CEDEF6 /* Resources */,
+				D9BA2FB828D3C1C000CEDEF6 /* ViewController.swift */,
+			);
+			path = ViperApp;
+			sourceTree = "<group>";
+		};
+		D9BA2FC828D3C24B00CEDEF6 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D9BA2FB428D3C1C000CEDEF6 /* AppDelegate.swift */,
 				D9BA2FB628D3C1C000CEDEF6 /* SceneDelegate.swift */,
-				D9BA2FB828D3C1C000CEDEF6 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9BA2FC928D3C26600CEDEF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D9BA2FBA28D3C1C000CEDEF6 /* Main.storyboard */,
 				D9BA2FBD28D3C1C100CEDEF6 /* Assets.xcassets */,
 				D9BA2FBF28D3C1C100CEDEF6 /* LaunchScreen.storyboard */,
 				D9BA2FC228D3C1C100CEDEF6 /* Info.plist */,
 			);
-			path = ViperApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9BA2FCA28D3C2FC00CEDEF6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA2FCB28D3C31400CEDEF6 /* DateService.swift */,
+				D9BA2FCD28D3C33200CEDEF6 /* WeatherService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BA2FCE28D3C33200CEDEF6 /* WeatherService.swift in Sources */,
 				D9BA2FB928D3C1C000CEDEF6 /* ViewController.swift in Sources */,
 				D9BA2FB528D3C1C000CEDEF6 /* AppDelegate.swift in Sources */,
 				D9BA2FB728D3C1C000CEDEF6 /* SceneDelegate.swift in Sources */,
+				D9BA2FCC28D3C31400CEDEF6 /* DateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76N9URDUCT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViperApp/Info.plist;
+				INFOPLIST_FILE = ViperApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76N9URDUCT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViperApp/Info.plist;
+				INFOPLIST_FILE = ViperApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
