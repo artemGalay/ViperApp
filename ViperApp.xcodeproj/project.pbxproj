@@ -68,9 +68,10 @@
 		D9BA2FB328D3C1C000CEDEF6 /* ViperApp */ = {
 			isa = PBXGroup;
 			children = (
-				D9BA2FCF28D3C65800CEDEF6 /* Welcome */,
+				D9BA2FD928D3D11700CEDEF6 /* ImageViewer */,
 				D9BA2FC828D3C24B00CEDEF6 /* App */,
 				D9BA2FCA28D3C2FC00CEDEF6 /* API */,
+				D9BA2FCF28D3C65800CEDEF6 /* Welcome */,
 				D9BA2FC928D3C26600CEDEF6 /* Resources */,
 			);
 			path = ViperApp;
@@ -115,6 +116,13 @@
 				D9BA2FD728D3C8D600CEDEF6 /* WelcomeModuleBuilder.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		D9BA2FD928D3D11700CEDEF6 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
