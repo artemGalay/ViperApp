@@ -19,6 +19,12 @@
 		D9BA2FD328D3C7CA00CEDEF6 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FD228D3C7CA00CEDEF6 /* WelcomeRouter.swift */; };
 		D9BA2FD528D3C81E00CEDEF6 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FD428D3C81E00CEDEF6 /* WelcomeInteractor.swift */; };
 		D9BA2FD828D3C8D600CEDEF6 /* WelcomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FD728D3C8D600CEDEF6 /* WelcomeModuleBuilder.swift */; };
+		D9BA2FDB28D3D25A00CEDEF6 /* ImageViewerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FDA28D3D25A00CEDEF6 /* ImageViewerModuleBuilder.swift */; };
+		D9BA2FDD28D3D2B000CEDEF6 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FDC28D3D2B000CEDEF6 /* ImageViewerViewController.swift */; };
+		D9BA2FDF28D3D30500CEDEF6 /* ImageViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FDE28D3D30500CEDEF6 /* ImageViewerRouter.swift */; };
+		D9BA2FE128D3D33900CEDEF6 /* ImageViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FE028D3D33900CEDEF6 /* ImageViewerPresenter.swift */; };
+		D9BA2FE328D3D39C00CEDEF6 /* ImageViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA2FE228D3D39C00CEDEF6 /* ImageViewerInteractor.swift */; };
+		D9BA2FE528D3D87A00CEDEF6 /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BA2FE428D3D87A00CEDEF6 /* ImageViewer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		D9BA2FD228D3C7CA00CEDEF6 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		D9BA2FD428D3C81E00CEDEF6 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
 		D9BA2FD728D3C8D600CEDEF6 /* WelcomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleBuilder.swift; sourceTree = "<group>"; };
+		D9BA2FDA28D3D25A00CEDEF6 /* ImageViewerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerModuleBuilder.swift; sourceTree = "<group>"; };
+		D9BA2FDC28D3D2B000CEDEF6 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		D9BA2FDE28D3D30500CEDEF6 /* ImageViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerRouter.swift; sourceTree = "<group>"; };
+		D9BA2FE028D3D33900CEDEF6 /* ImageViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerPresenter.swift; sourceTree = "<group>"; };
+		D9BA2FE228D3D39C00CEDEF6 /* ImageViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerInteractor.swift; sourceTree = "<group>"; };
+		D9BA2FE428D3D87A00CEDEF6 /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,12 @@
 		D9BA2FD928D3D11700CEDEF6 /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA2FDA28D3D25A00CEDEF6 /* ImageViewerModuleBuilder.swift */,
+				D9BA2FE028D3D33900CEDEF6 /* ImageViewerPresenter.swift */,
+				D9BA2FDE28D3D30500CEDEF6 /* ImageViewerRouter.swift */,
+				D9BA2FDC28D3D2B000CEDEF6 /* ImageViewerViewController.swift */,
+				D9BA2FE228D3D39C00CEDEF6 /* ImageViewerInteractor.swift */,
+				D9BA2FE428D3D87A00CEDEF6 /* ImageViewer.storyboard */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -185,6 +203,7 @@
 			files = (
 				D9BA2FC128D3C1C100CEDEF6 /* LaunchScreen.storyboard in Resources */,
 				D9BA2FBE28D3C1C100CEDEF6 /* Assets.xcassets in Resources */,
+				D9BA2FE528D3D87A00CEDEF6 /* ImageViewer.storyboard in Resources */,
 				D9BA2FBC28D3C1C000CEDEF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,15 +215,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BA2FDF28D3D30500CEDEF6 /* ImageViewerRouter.swift in Sources */,
 				D9BA2FCE28D3C33200CEDEF6 /* WeatherService.swift in Sources */,
 				D9BA2FD528D3C81E00CEDEF6 /* WelcomeInteractor.swift in Sources */,
 				D9BA2FD128D3C6F900CEDEF6 /* WelcomePresenter.swift in Sources */,
 				D9BA2FB928D3C1C000CEDEF6 /* ViewController.swift in Sources */,
+				D9BA2FDD28D3D2B000CEDEF6 /* ImageViewerViewController.swift in Sources */,
 				D9BA2FB528D3C1C000CEDEF6 /* AppDelegate.swift in Sources */,
 				D9BA2FD828D3C8D600CEDEF6 /* WelcomeModuleBuilder.swift in Sources */,
 				D9BA2FD328D3C7CA00CEDEF6 /* WelcomeRouter.swift in Sources */,
+				D9BA2FE128D3D33900CEDEF6 /* ImageViewerPresenter.swift in Sources */,
 				D9BA2FB728D3C1C000CEDEF6 /* SceneDelegate.swift in Sources */,
 				D9BA2FCC28D3C31400CEDEF6 /* DateService.swift in Sources */,
+				D9BA2FE328D3D39C00CEDEF6 /* ImageViewerInteractor.swift in Sources */,
+				D9BA2FDB28D3D25A00CEDEF6 /* ImageViewerModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

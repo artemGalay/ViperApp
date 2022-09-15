@@ -8,9 +8,16 @@
 import Foundation
 
 protocol WelcomeRouterProtocol: AnyObject {
+    func openImage(for temperatupe: Int)
 
 }
 
 class WelcomeRouter: WelcomeRouterProtocol {
-    weak var presenter: WelcomePresenterProtocol?
+
+    weak var viewController: ViewController?
+
+    func openImage(for temperatupe: Int) {
+        let vc = ImageViewerModuleBuilder.build(temperature: temperatupe)
+        viewController?.present(vc, animated: true)
+    }
 }
