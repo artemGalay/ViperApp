@@ -12,7 +12,6 @@ protocol WelcomePresenterProtocol: AnyObject {
     func didTapImageButton()
     func didLoad(date: String?)
     func didLoad(weather: Int?)
-
 }
 
 class WelcomePresenter {
@@ -23,18 +22,15 @@ class WelcomePresenter {
     init(interactor: WelcomeInteractorProtocol, router: WelcomeRouterProtocol) {
         self.interactor = interactor
         self.router = router
-
     }
 }
 
 extension WelcomePresenter: WelcomePresenterProtocol {
 
-
     func viewDidLoaded() {
         interactor.loadDate()
         interactor.loadWeather()
     }
-
 
     func didTapImageButton() {
         let temperature = interactor.temperature
@@ -48,8 +44,5 @@ extension WelcomePresenter: WelcomePresenterProtocol {
     func didLoad(weather: Int?) {
         let temperature = weather?.description ?? "No temperatupe"
         view?.showWeather(weather: temperature)
-    }
-
-
-    
+    }    
 }

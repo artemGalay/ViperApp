@@ -13,8 +13,6 @@ protocol ImageViewerInteractorProtocol: AnyObject {
 
 class ImageViewerInteractor: ImageViewerInteractorProtocol {
 
-
-    
     weak var presenter: ImageViewerPresenterProtocol?
     let temperature: Int
     

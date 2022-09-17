@@ -12,9 +12,7 @@ class WelcomeModuleBuilder {
         let interactor = WelcomeInteractor()
         let router = WelcomeRouter()
         let presenter = WelcomePresenter(interactor: interactor, router: router)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "Main") as! ViewController
-        viewController.presenter = presenter
+        let viewController = ViewController(presenter: presenter)
         presenter.view = viewController
         interactor.presenter = presenter
         router.viewController = viewController

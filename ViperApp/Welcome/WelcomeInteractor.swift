@@ -11,7 +11,6 @@ protocol WelcomeInteractorProtocol: AnyObject {
     func loadDate()
     func loadWeather()
     var temperature: Int { get }
-
 }
 
 class WelcomeInteractor: WelcomeInteractorProtocol {
@@ -20,7 +19,6 @@ class WelcomeInteractor: WelcomeInteractorProtocol {
     let dataService = DateService()
     let weatherService = WeatherService()
     var temperature: Int = 0
-
 
     func loadDate() {
         dataService.getDate { [weak self] date in
