@@ -19,7 +19,6 @@ class ImageViewerPresenter {
     init(interactor: ImageViewerInteractorProtocol, router: ImageViewerRouterProtocol) {
         self.interactor = interactor
         self.router = router
-
     }
 }
 

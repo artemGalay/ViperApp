@@ -8,10 +8,8 @@
 import Foundation
 
 protocol ImageViewerRouterProtocol: AnyObject {
-
 }
 
 class ImageViewerRouter: ImageViewerRouterProtocol {
     weak var viewController: ImageViewerViewController?
 }
-
